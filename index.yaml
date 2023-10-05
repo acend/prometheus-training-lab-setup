@@ -3,6 +3,17 @@ entries:
   user-monitoring:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-10-05T11:51:33.421052727Z"
+    description: Acend helm chart for user-monitoring namespace in prometheus-basics
+      training
+    digest: a4043d6b93ee4aaef394e9e66ab806b11ec8cf1665b534b85d7ee1584fac2eb9
+    name: user-monitoring
+    type: application
+    urls:
+    - https://github.com/acend/prometheus-training-lab-setup/releases/download/user-monitoring-0.2.3/user-monitoring-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-08-10T14:08:08.237621347Z"
     description: Acend helm chart for user-monitoring namespace in prometheus-basics
       training
@@ -103,6 +114,17 @@ entries:
   user-monitoring-demo:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-10-05T11:51:33.69338868Z"
+    description: Demo chart for user spaced monitoring stack in prometheus basics
+      training.
+    digest: 2d175d6f134994e79a84607039b2c2211a33ce1169082bcc6046e3770936944c
+    name: user-monitoring-demo
+    type: application
+    urls:
+    - https://github.com/acend/prometheus-training-lab-setup/releases/download/user-monitoring-demo-0.1.1/user-monitoring-demo-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-08-09T12:51:03.914020183Z"
     description: Demo chart for user spaced monitoring stack in prometheus basics
       training.
@@ -112,4 +134,4 @@ entries:
     urls:
     - https://github.com/acend/prometheus-training-lab-setup/releases/download/user-monitoring-demo-0.1.0/user-monitoring-demo-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-10T14:08:08.237817639Z"
+generated: "2023-10-05T11:51:33.693581683Z"
