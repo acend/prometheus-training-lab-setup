@@ -3,6 +3,17 @@ entries:
   user-monitoring:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-10-11T10:31:18.211680801Z"
+    description: Acend helm chart for user-monitoring namespace in prometheus-basics
+      training
+    digest: 653edb52c867fc63534550453d41fa6eb4acbf7e50f2f94d553ef35770608682
+    name: user-monitoring
+    type: application
+    urls:
+    - https://github.com/acend/prometheus-training-lab-setup/releases/download/user-monitoring-0.2.5/user-monitoring-0.2.5.tgz
+    version: 0.2.5
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-10-10T12:14:33.841977384Z"
     description: Acend helm chart for user-monitoring namespace in prometheus-basics
       training
@@ -145,4 +156,4 @@ entries:
     urls:
     - https://github.com/acend/prometheus-training-lab-setup/releases/download/user-monitoring-demo-0.1.0/user-monitoring-demo-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-10T12:14:33.842047686Z"
+generated: "2023-10-11T10:31:18.211875514Z"
