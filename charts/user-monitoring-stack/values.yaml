@@ -1,0 +1,73 @@
+promstack:
+  enabled: true
+
+kube-prometheus-stack:
+  prometheus:
+    enabled: true
+    prometheusSpec:
+      resources:
+        requests:
+          cpu: 100m
+          memory: 400Mi
+      scrapeInterval: 60s
+      serviceMonitorNamespaceSelector:
+        matchLabels:
+          user: <user>
+      serviceMonitorSelector: {}
+      podMonitorNamespaceSelector:
+        matchLabels:
+          user: <user>
+      podMonitorSelector: {}
+      probeNamespaceSelector:
+        matchLabels:
+          user: <user>
+      ruleSelectorNilUsesHelmValues: false
+      serviceMonitorSelectorNilUsesHelmValues: false
+      podMonitorSelectorNilUsesHelmValues: false
+      probeSelectorNilUsesHelmValues: false
+    serviceAccount:
+      create: true
+      name: "prometheus-<user>"
+  grafana:
+    enabled: false
+  alertmanager:
+    enabled: false
+  
+  kubernetesServiceMonitors:
+    enabled: false
+  
+
+
+# not relevant for the lab
+  crds:
+    enabled: false
+  kubeProxy:
+    enabled: false 
+  kubeScheduler:
+    enabled: false
+  kubeControllerManager:
+    enabled: false 
+  kubeEtcd:
+    enabled: false 
+  kubeApiServer:
+    enabled: false
+  kubelet:
+    enabled: false
+  coreDns:
+    enabled: false
+  kubeStateMetrics:
+    enabled: false
+  nodeExporter:
+    enabled: false
+  prometheusOperator:
+    enabled: false
+  kubeletService:
+    enabled: false
+  defaultRules:
+    create: false
+
+
+global:
+  rbac:
+    create: false
+    createAggregateClusterRoles: false
