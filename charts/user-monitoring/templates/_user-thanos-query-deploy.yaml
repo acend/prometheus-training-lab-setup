@@ -26,6 +26,7 @@ spec:
         - --endpoint=prometheus-operated.{{ .Values.user }}-monitoring.svc.cluster.local:10901
         - --endpoint=thanos-ruler-operated.{{ .Values.user }}-monitoring.svc.cluster.local:10901
         - --endpoint=prometheus-operated.monitoring.svc.cluster.local:10901
+        - --store=dnssrv+_grpc._tcp.kube-prometheus-stack-thanos-discovery.monitoring.svc.cluster.local
         - --store.unhealthy-timeout=3d
         image: quay.io/thanos/thanos:v0.25.1
         name: thanos-query
